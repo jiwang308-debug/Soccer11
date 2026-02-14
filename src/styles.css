@@ -1,0 +1,124 @@
+:root {
+  --bg-1: #0f172a;
+  --bg-2: #1e3a8a;
+  --panel: #0b1220cc;
+  --line: #e2e8f0;
+  --pitch: #0b7a38;
+  --pitch-alt: #0f8a42;
+  --p1: #f97316;
+  --p2: #38bdf8;
+  --ball: #f8fafc;
+  --text: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at 20% 15%, var(--bg-2), var(--bg-1) 60%);
+}
+
+.app-shell {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.hud {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 1rem;
+  background: var(--panel);
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 0.75rem;
+}
+
+.score-card {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+#p2-score {
+  text-align: right;
+}
+
+.match-info {
+  text-align: center;
+}
+
+#phase {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.8;
+}
+
+#clock {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.game-wrap {
+  border: 1px solid #475569;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 40px #02061799;
+}
+
+#game-canvas {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.controls-note {
+  background: var(--panel);
+  border: 1px solid #334155;
+  border-radius: 14px;
+  padding: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.controls-note p {
+  margin: 0.35rem 0;
+}
+
+.start-btn {
+  justify-self: center;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(120deg, #ef4444, #f97316);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+}
+
+.start-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+@media (max-width: 720px) {
+  .score-card {
+    font-size: 1.05rem;
+  }
+
+  #clock {
+    font-size: 1.15rem;
+  }
+
+  .controls-note {
+    font-size: 0.85rem;
+  }
+}

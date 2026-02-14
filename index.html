@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soccer11</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hud">
+        <div class="score-card" id="p1-score">P1 0</div>
+        <div class="match-info">
+          <div id="phase">Regular Time</div>
+          <div id="clock">03:00</div>
+        </div>
+        <div class="score-card" id="p2-score">P2 0</div>
+      </header>
+
+      <section class="game-wrap">
+        <canvas id="game-canvas" width="960" height="540" aria-label="Soccer11 game area"></canvas>
+      </section>
+
+      <section class="controls-note">
+        <p><strong>Player 1:</strong> WASD move, F shoot, G tackle</p>
+        <p><strong>Player 2:</strong> Arrow keys move, K shoot, L tackle</p>
+        <p id="status">Press Start Match to begin.</p>
+      </section>
+
+      <button id="start-btn" class="start-btn" type="button">Start Match</button>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
