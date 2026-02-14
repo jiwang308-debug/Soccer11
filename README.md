@@ -1,6 +1,6 @@
 Project: Soccer11
 
-Deployment target: https://jiwang308-debug.github.io/soccer11/
+Deployment target: https://jiwang308-debug.github.io/Soccer11/
 
 # 🎮 Two-Player Soccer Duel Game Rules
 
